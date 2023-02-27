@@ -34,10 +34,8 @@ cercle2 = Cercle(7)
 #cercle avec 4 de rayon
 cercle1.afficherInfos()
 
-
 #cercle avec 7 de rayon
 cercle2.afficherInfos()
-
 
 #cercle avec rayon changer
 cercle2.changerRayon(10)

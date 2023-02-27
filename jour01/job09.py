@@ -4,8 +4,10 @@ class Produit:
         self.prixHT = prixHT
         self.TVA = TVA
 
-    def changer_prix_nom(self, nom, prixHT):
+    def changer_nom(self, nom):
         self.nom = nom
+
+    def changer_prix(self, prixHT):
         self.prixHT = prixHT
 
     def nom_produit(self):
@@ -15,7 +17,6 @@ class Produit:
         return self.prixHT
 
     def TVA_produit(self):
-        self.TVA = self.TVA
         return self.TVA
 
     def CalculerPrixTTC(self):
@@ -50,21 +51,24 @@ print(str(tele.prixHT_produit())+'€ HT')
 print(str(tele.TVA_produit()*100)+'%','TVA')
 print(str(tele.CalculerPrixTTC())+ '€ TTC\n')
 
-patate.changer_prix_nom('pomme', 5)
+patate.changer_nom('pomme')
+patate.changer_prix(5)
 print(patate.afficher())
 print(patate.nom_produit())
 print(str(patate.prixHT_produit())+'€ HT')
 print(str(patate.TVA_produit()*100)+'%','TVA')
 print(str(patate.CalculerPrixTTC())+ '€ TTC\n')
 
-ps5.changer_prix_nom('xbox', 300)
+ps5.changer_nom('xbox')
+ps5.changer_prix(360)
 print(ps5.afficher())
 print(ps5.nom_produit())
 print(str(ps5.prixHT_produit())+'€ HT')
 print(str(ps5.TVA_produit()*100)+'%','TVA')
 print(str(ps5.CalculerPrixTTC())+ '€ TTC\n')
 
-tele.changer_prix_nom('voiture', 25000)
+tele.changer_nom('voiture')
+tele.changer_prix(2500)
 print(tele.afficher())
 print(tele.nom_produit())
 print(str(tele.prixHT_produit())+'€ HT')
